@@ -48,7 +48,7 @@ else if (age > 65) {
 // collegamenti 
 
 window.document.getElementById('km').innerHTML = kilometri + 'km';
-window.document.getElementById('eta').innerHTML = age + 'y.o.';
+window.document.getElementById('eta').innerHTML = age + 'y.o.-';
 window.document.getElementById('sconto').innerHTML = cost + '€';
 
 
