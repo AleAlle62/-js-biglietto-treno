@@ -1,0 +1,20 @@
+html {
+    font-size: 30px;
+
+}
+
+
+#km {
+    background-color:  aqua;
+    border-radius: 10px;
+}
+
+#eta {
+    background-color:  lawngreen;
+    border-radius: 10px;
+}
+
+#sconto {
+    background-color: magenta;
+    border-radius: 10px;
+}

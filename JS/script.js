@@ -24,23 +24,33 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 
 // costanti 
 
-let kilometri = prompt ('quanti km vuoi fare ?') 
-let age = prompt ('quanti anni hai ?')
+let kilometri = prompt ('quanti km vuoi fare ?');
+let age = prompt ('quanti anni hai ?');
 let cost = (kilometri * 0.21).toFixed(2);
 
 // formula sconti 
 
 // 18
 if (age < 18) {
-    newCost = (cost * 0.8 + '€').toFixed(2)
-    console.log(newCost)
+    let sale = (cost * 0.8).toFixed(2);
+    console.log(sale + '€');
 } 
 
+// 65
 
 else if (age > 65) {
-    newCost = (cost * 0.6 + '€').toFixed(2)
-    console.log(newCost)
+    let sale = (cost * 0.6).toFixed(2);
+    console.log(sale + '€');
+} else {
+    console.log (cost + '€' );
 }
+
+// collegamenti 
+
+window.document.getElementById('km').innerHTML = kilometri + 'km';
+window.document.getElementById('eta').innerHTML = age + 'y.o.';
+window.document.getElementById('sconto').innerHTML = cost + '€';
+
 
 
 
